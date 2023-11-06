@@ -650,13 +650,14 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 }
 
 .review-form-field-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .review-form-field {
   width: 100%;
   height: 40px;
-
+background-color: transparent;
+outline: transparent;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding-left: 38px;
@@ -687,16 +688,21 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .review-form-message {
   width: 100%;
   height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   resize: none;
   padding: 8px 16px;
-  color: #2e2f4266;
   outline-offset: 2px;
   outline-color: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.review-form-message:focus {
+  border-color: #4D5AE5;
+}
 .review-form-message::placeholder {
   color: #2e2f4266;
 }
@@ -706,7 +712,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 .review-form-checkbox-label {
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.16;
+  line-height: 1.17;
   /* 116.667% */
   letter-spacing: 0.04em;
   color: #8e8f99;
@@ -734,13 +740,16 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
   cursor: pointer;
   fill: transparent;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox:focus
   + .review-form-checkbox-label
   .review-form-own-checkbox {
-  background-color: #4d5ae5;
-  fill: #ffffff;
+ 
+  fill: #F4F4FD;
+  border: none;
+  background-color:#404bbf;
 }
 .review-form-btn {
   display: block;
