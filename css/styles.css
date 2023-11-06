@@ -551,6 +551,7 @@ body {
 /* ====================backdrop========== */
 .backdrop {
   position: fixed;
+  margin-bottom: 8px;
   top: 0;
   left: 0;
   z-index: 9999;
@@ -567,6 +568,7 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  
 }
 
 /* ==============window====== */
@@ -679,6 +681,7 @@ outline: transparent;
   transform: translateY(-50%);
   margin-left: 20 px;
   transition: fill var(--timing-function);
+  left: 16px
 }
 
 .review-form-field:focus + .review-form-field-icon {
@@ -771,16 +774,13 @@ outline: transparent;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  
   /* 150% */
   letter-spacing: 0.04em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.send-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .review-form-btn:hover,
 .review-form-btnn:focus {
